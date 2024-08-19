@@ -1,0 +1,55 @@
+
+
+/* JAVA */ 
+package EJERCICIOS;
+public class SumaArreglo {
+    public static int sumaArreglo(int[] arr) {
+        int suma = 0;
+        for (int num : arr) {
+            suma += num;
+        }
+        return suma;
+    }
+
+
+    public static void main(String[] args) {
+        int[] arreglo = {1, 2, 3, 4, 5};
+        System.out.println(sumaArreglo(arreglo));  
+    }
+}
+
+
+
+
+/* C++ */ 
+#include <iostream>
+using namespace std;
+
+
+int sumaArreglo(int arr[], int n) {
+    int suma = 0;
+    for (int i = 0; i < n; i++) {
+        suma += arr[i];
+    }
+    return suma;
+}
+
+
+int main() {
+    int arreglo[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arreglo) / sizeof(arreglo[0]);
+    cout << sumaArreglo(arreglo, n) << endl;  
+    return 0;
+}
+
+
+
+
+%% PYTHON 
+def suma_arreglo(arr):
+    return sum(arr)
+
+
+# Ejemplo de uso
+arreglo = [1, 2, 3, 4, 5]
+print(suma_arreglo(arreglo))  
